@@ -19,7 +19,6 @@ const sum = (a, b) => a + b
 const curriedSum = (a) => (b) => a + b
 const add5 = curriedSum(5)
 add5(12) // 17
-
 // Currying || The proccess of converting a function that takes multiple arguments into a function that takes them 1 at a time
 
 //Composing: What does the last line return?
