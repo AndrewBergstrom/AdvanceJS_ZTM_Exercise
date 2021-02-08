@@ -48,10 +48,28 @@ const newArr = array.forEach((num) => {
 console.log(double);
 
 // map -always needs to return something: anytime you think about doing a loop
-const mapArray = array.map((num) => {
-  return num * 2;
-})
-console.log(mapArray);
-// filter
+// const mapArray = array.map((num) => {
+//   return num * 2;
+// })
+// console.log(mapArray);
 
-// reduce
+// shorthand map syntax:
+const mapArray = array.map( num => num * 2);
+
+// filter - must return something
+// const filterArray = array.filter(num => {
+//   return num > 5
+// })
+
+// single line filter = shorthand:
+const filterArray = array.filter( num => num > 5);
+
+// reduce - can do filtering & mapping w/ reduce
+// accumulator is something where we can store the info that happens in the body of the function. In reduce after the function, you have a second parameter. 
+
+const reduceArray = array.reduce((accumulator, num) => {
+  return accumulator + num
+}, 0);
+
+console.log("reduce", reduceArray);
+
