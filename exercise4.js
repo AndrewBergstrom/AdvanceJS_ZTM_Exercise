@@ -36,6 +36,9 @@ compose(add1, add5)(10) //16
 
 
 //Advanced Arrays
+// Map
+// Filter
+// Reduce
 
 const array = [1, 2, 10, 16];
 
@@ -72,4 +75,11 @@ const reduceArray = array.reduce((accumulator, num) => {
 }, 0);
 
 console.log("reduce", reduceArray);
+
+// Advanced Objects
+// reference type
+// constext
+// instantiation 
+
+// reference type
 
