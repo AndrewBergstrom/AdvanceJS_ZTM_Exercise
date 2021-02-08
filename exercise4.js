@@ -82,4 +82,6 @@ console.log("reduce", reduceArray);
 // instantiation 
 
 // reference type
+// OBJECTS are what's called a reference type, which is a non-primitive type. non-primitive types ie: 1, true, "hello", null, undefined, false
 
+// context tells you where you are within the object
