@@ -33,3 +33,25 @@ compose(add1, add5)(10) //16
 // DETERMINISTIC -  No matter what if my input, ex:(5, 10), goes through a function the return value will always be the same (5, 10)
 
 // Avoiding Side Effects -  In order for us to write good code, we avoid side effects, and always make sure we are returning. 
+
+
+//Advanced Arrays
+
+const array = [1, 2, 10, 16];
+
+const double = []
+
+const newArr = array.forEach((num) => {
+  double.push(num * 2);
+})
+
+console.log(double);
+
+// map -always needs to return something: anytime you think about doing a loop
+const mapArray = array.map((num) => {
+  return num * 2;
+})
+console.log(mapArray);
+// filter
+
+// reduce

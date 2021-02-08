@@ -54,6 +54,3 @@ const tree = 144 + 7 + 12;
 
 const tree = 163;
 
-// Initial thought:
-// 4 * 9 * 4 + 2 + 2 + 9 + 3
-
