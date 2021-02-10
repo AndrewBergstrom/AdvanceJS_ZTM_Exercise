@@ -85,3 +85,27 @@ console.log("reduce", reduceArray);
 // OBJECTS are what's called a reference type, which is a non-primitive type. non-primitive types ie: 1, true, "hello", null, undefined, false
 
 // context tells you where you are within the object
+
+// Pass by reference:
+
+let obj1 = {name: 'andrew', password: '123'}
+let obj2 = obj1; // obj1 is now being stored as address in memory
+
+obj2.password = 'password'
+// if we console.log, we would expect to see obj1 & obj2 with a new password of 'password', this is what is meant by 'Pass by reference'
+
+var c = [1, 2, 3, 4, 5];
+var d =[].concat(c) ;
+d.push(187628761)
+console.log(c);
+
+let obj = {
+  a: 'a',
+  b: 'b', 
+  c:'c'
+}
+
+let clone = Object.assign({}, obj)
+
+obj.c = 5;
+console.log(clone)
